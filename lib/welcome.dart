@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'profile.dart';
+import 'details.dart';
+
 
 class Welcome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
-        Navigator.pushReplacement(context,new MaterialPageRoute(builder: (BuildContext context) => Profile()));
+        Navigator.pushReplacement(context,new MaterialPageRoute(builder: (BuildContext context) => Details()));
       },
       child: Scaffold(
         body: new Stack(

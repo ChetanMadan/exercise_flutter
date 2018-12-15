@@ -4,6 +4,7 @@ import 'package:ms_hacks/pages/diet.dart';
 import 'package:ms_hacks/pages/day.dart';
 import 'package:ms_hacks/pages/yoga.dart';
 import 'package:ms_hacks/pages/running.dart';
+import 'package:ms_hacks/pages/goals.dart';
 
 class Profile extends StatelessWidget {
   @override
@@ -49,6 +50,13 @@ class Profile extends StatelessWidget {
                 leading: Icon(Icons.directions),
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Running() ));
+                }
+            ),
+            ListTile(
+                title: new Text("GOALS"),
+                leading: Icon(Icons.directions),
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Goals() ));
                 }
             ),
           ],
