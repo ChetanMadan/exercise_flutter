@@ -7,33 +7,19 @@ class Goals extends StatelessWidget {
       appBar: new AppBar(
         title: new Text('Goals'),
       ),
-      body: GridView.count(
+      body: new GridView.count(
         crossAxisCount: 2,
-        children: <Widget>[
-          Container(
-            padding: EdgeInsets.all(3.0),
-            decoration: new BoxDecoration(
-                color: Color(0xFF9733ee),
-                shape: BoxShape.circle
+        children: new List<Widget>.generate(6, (index) {
+          return new GridTile(
+            child: new Card(
+                color: Colors.grey.shade200,
+                child: new Center(
+                  child: new Text('tile $index'),
+                )
             ),
-            child: CircleAvatar(
-              backgroundImage: new AssetImage('images/google.jpg'),
-              radius: 36.0,
-            ),
-          ),
-          Container(
-            padding: EdgeInsets.all(3.0),
-            decoration: new BoxDecoration(
-                color: Color(0xFF9733ee),
-                shape: BoxShape.circle
-            ),
-            child: CircleAvatar(
-              backgroundImage: new AssetImage('images/google.jpg'),
-              radius: 36.0,
-            ),
-          ),
-        ],
-      )
+          );
+        }),
+      ),
     );
   }
 }

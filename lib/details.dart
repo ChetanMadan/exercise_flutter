@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'profile.dart';
 
+
 class Details extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

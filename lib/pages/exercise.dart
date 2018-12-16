@@ -26,8 +26,6 @@ class Exercise extends StatelessWidget {
                     ),
                   ),
                   title: new Text("DAY $index"),
-
-
                 ),
                 Divider(height: 20.0,)
               ],
