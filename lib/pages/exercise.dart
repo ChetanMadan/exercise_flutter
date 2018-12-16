@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:ms_hacks/pages/exercise/crunch.dart';
+import 'package:ms_hacks/pages/exercise/pushup.dart';
 
 
-List a = ["Push Ups","Crunches","Weight Lifting","Lunges","Pull Ups","Standees"];
+List<String> a = ["Push Ups","Crunches","Weight Lifting","Lunges","Pull Ups","Standees"];
+List<Widget> d =[Crunch(),PushUps()];
+List y = ['images/(1).png','images/(2).png','images/(3).png','images/(4).png','images/(5).png','images/(6).jpg'];
+
+
 class Exercise extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -15,6 +22,9 @@ class Exercise extends StatelessWidget {
             return Column(
               children: <Widget>[
                 ListTile(
+                  onTap: (){
+                      Navigator.push(context,MaterialPageRoute(builder: (BuildContext context) => d[index]));
+                  },
                   contentPadding: EdgeInsets.all(10.0),
                   leading: Container(
                     padding: EdgeInsets.all(3.0),
@@ -23,7 +33,7 @@ class Exercise extends StatelessWidget {
                       shape: BoxShape.circle
                     ),
                     child: CircleAvatar(
-                      backgroundImage: new AssetImage('images/google.jpg'),
+                      backgroundImage: new AssetImage(y[index]),
                       radius: 36.0,
                     ),
                   ),
