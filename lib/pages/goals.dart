@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+List b = ["Abs","Legs","Upper Body","Lower Body","Arms","Thighs"];
+
 class Goals extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,7 +16,7 @@ class Goals extends StatelessWidget {
             child: new Card(
                 color: Colors.grey.shade200,
                 child: new Center(
-                  child: new Text('tile $index'),
+                  child: new Text(b[index],style: TextStyle(fontWeight: FontWeight.bold,fontSize:20),),
                 )
             ),
           );

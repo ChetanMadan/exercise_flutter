@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+
+List a = ["Push Ups","Crunches","Weight Lifting","Lunges","Pull Ups","Standees"];
 class Exercise extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class Exercise extends StatelessWidget {
                       radius: 36.0,
                     ),
                   ),
-                  title: new Text("DAY $index"),
+                  title: new Text(a[index],style: new TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
                 ),
                 Divider(height: 20.0,)
               ],

@@ -21,7 +21,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   location: ^1.4.1
   geolocator: ^2.1.1
-  flutter_staggered_grid_view:
+  video_player: ^0.8.0
+
 
 
 dev_dependencies:
