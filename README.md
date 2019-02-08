@@ -1,4 +1,4 @@
-# ms_hacks
+# exercise app
 
 A new Flutter application.
 
